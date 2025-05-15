@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador de CPF</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <main>
+        <div class="content">
+          <div class="titulo">
+            <h1>Validador de CPF</h1>
+          </div>
+          <div class="inputs">
+              <label for="input-cpf">Informe o CPF: </label>
+              <input type="tel" class="input-cpf"
+                placeholder="000.000.000-00"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                maxlength="14"/>
+              <button class="btn-enviar" id="btn-enviar">Enviar</button>
+              <div class="resultado"></div>
+            </div>
+        </div>
+      </main>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
